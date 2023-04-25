@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#f1c1 {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+}
+
+#f2c1 {
+    background-color: gray;
+    color: #fff;
+}
+
+#f2c2 {
+    background-color: #212529;
+}
+
+table {
+    text-align: center;
+}
+
+table tbody tr {
+    transition: font-size 0.4s ease-in;
+    cursor: pointer;
+}
+
+table tbody tr:hover {
+    font-size: 1.1rem;
+}
+
+#f1c1 h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+#txtcodigo {
+    width: 5.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#txtprecio {
+    width: 10rem;
+}
+
+#txtstock {
+    width: 5rem;
+}
+
+#alertanombre, #alertadesc, #alertaprecio, #alertastock {
+    color: red;
+    font-size: 0.7rem;
+}
