@@ -1,5 +1,5 @@
 const trunk = "ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890123456789";
-codeGenerate = (length = 5) => {
+codeGenerate = (length) => {
     let result = "";
     for (let i = 0; i < length; i++) {
         result += trunk.charAt(Math.floor(Math.random() * trunk.length));
@@ -7,16 +7,17 @@ codeGenerate = (length = 5) => {
     return result;
 }
 
+/* 
 inputCode = (boolean) => {
-    const code = codeGenerate();
+    const code = codeGenerate(3);
     document.getElementById("txtcodigo").value = code;
 }
-inputCode(true);
+
+inputCode(true); */
 
 var btnagregar = document.getElementById("btn-agregar");
 btnagregar.addEventListener("click", () => {
 
-    let codigo = document.getElementById("txtcodigo").value;
     let nombre = document.getElementById("txtnombre").value;
     let descripcion = document.getElementById("txtdesc").value;
     let precio = document.getElementById("txtprecio").value;
@@ -53,6 +54,7 @@ btnagregar.addEventListener("click", () => {
         }
 
     } else {
+        let codigo = nombre.charAt(0)+nombre.charAt(1)+codeGenerate(5)+descripcion.charAt(0)+descripcion.charAt(1);
 
         document.getElementById("alertanombre").innerHTML = "";
         document.getElementById("alertadesc").innerHTML = "";
@@ -71,9 +73,6 @@ btnagregar.addEventListener("click", () => {
         `
         /* Agrega las filas como nodos hijos del cuerpotabla */
         cuerpotabla.appendChild(fila);
-
-        /* Crea un nuevo codigo */
-        inputCode(true);
     }
 });
 
