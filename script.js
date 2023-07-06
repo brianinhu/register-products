@@ -79,9 +79,6 @@ btnagregar.addEventListener("click", () => {
 var btnlimpiar = document.getElementById("btn-limpiar");
 btnlimpiar.addEventListener("click", () => {
 
-    /* Crea un nuevo codigo */
-    inputCode(true);
-
     /* Limpia los input´s*/
     document.getElementById("txtnombre").value = "";
     document.getElementById("txtdesc").value = "";
@@ -94,9 +91,6 @@ btnlimpiar.addEventListener("click", () => {
 
 var btnlimpiarregistro = document.getElementById("btn-limpiarregistro");
 btnlimpiarregistro.addEventListener("click", () => {
-
-    /* Crea un nuevo codigo */
-    inputCode(true);
 
     /* Limpia los input´s*/
     document.getElementById("txtnombre").value = "";
