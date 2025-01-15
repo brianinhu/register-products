@@ -1,8 +1,4 @@
-# Registro de productos dinámico
+# Dynamic product registration
 
-Registro de productos dinámico con **HTML**, **CSS** y **JavaScript**. 
-Se ingresa los valores mediante un formulario *HTML*, luego se pasan a la tabla que está en la misma página. Adicionalmente, se tienen algunas restricciones para no permitir el ingreso de campos vacíos ni incongruencias (Por mejorar).
-
----
-
-Cualquier aporte es bienvenido :sparkles:
+Dynamic product registration with **HTML**, **CSS** and **JavaScript**. 
+The values are entered through an *HTML* form, then they are passed to the table that is in the same page. Additionally, there are some restrictions to not allow the entry of empty fields or inconsistencies.
